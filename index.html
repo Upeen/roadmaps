@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Roadmap - Complete Skill Development</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+    :root {
+      --primary: #0af;
+      --primary-dark: #0088cc;
+      --dark-bg: #121212;
+      --light-bg: #f5f5f5;
+      --card-bg: #1e1e1e;
+      --card-bg-light: #fff;
+      --panel-bg: #1a1a1a;
+      --panel-bg-light: #fff;
+      --text-light: #f1f1f1;
+      --text-dark: #333;
+      --text-secondary: #ddd;
+      --text-secondary-light: #666;
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+      --shadow: 0 4px 15px rgba(0, 170, 255, 0.15);
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+      margin: 0;
+      padding: 20px;
+      transition: var(--transition);
+    }
+    body.light-mode {
+      background-color: var(--light-bg);
+      color: var(--text-dark);
+    }
+    body.light-mode .roadmap-card, body.light-mode .role-card {
+      background-color: var(--card-bg-light);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: var(--text-dark);
+    }
+    .header-container {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      color: var(--primary);
+      text-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+      animation: glow 2s ease-in-out infinite alternate;
+      font-size: 2.8rem;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(0, 170, 255, 0.3); }
+      to { text-shadow: 0 0 15px rgba(0, 170, 255, 0.6); }
+    }
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 10px auto;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .theme-toggle:hover {
+      transform: scale(1.15);
+      background-color: var(--primary-dark);
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0 30px;
+    }
+    .tab-btn {
+      padding: 10px 20px;
+      background: #2c2c2c;
+      color: #aaa;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .roadmap-card, .role-card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      animation: slideUp 0.6s ease-out forwards;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .roadmap-card:hover, .role-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 170, 255, 0.25);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 3px var(--primary));
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 0;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+    .card-section {
+      margin: 12px 0;
+      font-size: 0.9rem;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #66c2ff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: "→";
+      color: var(--primary);
+    }
+    .topic-list {
+      margin: 4px 0;
+      padding-left: 16px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .topic-item {
+      margin: 4px 0;
+    }
+    .topic-topic {
+      font-weight: 600;
+      color: #a0e7ff;
+    }
+    .topic-concepts {
+      font-style: italic;
+      color: #999;
+    }
+    .tools-section {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: rgba(0, 170, 255, 0.1);
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    .tools-section strong {
+      color: var(--primary);
+    }
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .tag {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      background: rgba(0, 170, 255, 0.2);
+      color: #80d8ff;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    body.light-mode .tag {
+      background: #e0f7fa; color: #006064;
+    }
+    .salary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0;
+      font-size: 0.85rem;
+    }
+    .salary-table th, .salary-table td {
+      border: 1px solid #333;
+      padding: 6px;
+      text-align: center;
+    }
+    body.light-mode .salary-table th, body.light-mode .salary-table td {
+      border-color: #ccc;
+    }
+    .salary-table th {
+      background-color: #2c2c2c;
+      color: var(--primary);
+    }
+    .salary-table tr:nth-child(even) {
+      background-color: #1e1e1e;
+    }
+    body.light-mode .salary-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .tips {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: rgba(255, 255, 0, 0.1);
+      border-left: 3px solid #ffeb3b;
+      font-size: 0.85rem;
+      color: #ffeb3b;
+      border-radius: 0 4px 4px 0;
+    }
+    body.light-mode .tips {
+      background-color: #fff9c4;
+      color: #5d4037;
+      border-left-color: #fbc02d;
+    }
+    .experience-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 12px;
+      margin-right: 5px;
+      margin-bottom: 4px;
+    }
+    .entry-badge { background-color: #4a86e8; color: white; }
+    .mid-badge { background-color: #6aa84f; color: white; }
+    .senior-badge { background-color: #f1c232; color: #333; }
+    .lead-badge { background-color: #cc0000; color: white; }
+    .expert-badge { background-color: #8e7cc3; color: white; }
+    .difficulty-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 12px;
+      margin-right: 5px;
+      margin-bottom: 4px;
+    }
+    .beginner-badge { background-color: #4a86e8; color: white; }
+    .intermediate-badge { background-color: #6aa84f; color: white; }
+    .advanced-badge { background-color: #f1c232; color: #333; }
+    .expert-badge { background-color: #cc0000; color: white; }
+    .prerequisites {
+      font-size: 0.8rem;
+      color: #ff9966;
+      font-style: italic;
+      margin-top: 4px;
+    }
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 10px;
+      align-items: center;
+    }
+    .filter-select, .search-input {
+      padding: 10px;
+      background: #2c2c2c;
+      color: #aaa;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .filter-select:hover, .search-input:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .search-input {
+      width: 200px;
+      cursor: text;
+    }
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--primary);
+      font-size: 1.2rem;
+      grid-column: 1 / -1;
+    }
+    .error {
+      text-align: center;
+      padding: 40px;
+      color: #ff6b6b;
+      font-size: 1.1rem;
+      grid-column: 1 / -1;
+    }
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .filter-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <h1>Learning Roadmap</h1>
+    <p class="subtitle">Explore comprehensive skill roadmaps and job roles in data science, engineering, analytics, AI/ML, and emerging technologies. Master skills from beginner to expert level.</p>
+  </div>
+  
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+  
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="roadmaps">Skill Roadmaps</button>
+    <button class="tab-btn" data-tab="roles">Job Roles</button>
+    <button class="tab-btn" data-tab="trending">Trending Roles</button>
+  </div>
+  
+  <!-- Skill Roadmaps Panel -->
+  <div id="roadmaps" class="tab-content active">
+    <div class="filter-container">
+      <select id="difficultyFilter" class="filter-select">
+        <option value="all">All Difficulties</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+      <select id="searchSelect" class="filter-select">
+        <option value="">All Roadmaps</option>
+      </select>
+    </div>
+    <div class="grid" id="roadmapsGrid">
+      <div class="loading">Loading roadmaps...</div>
+    </div>
+  </div>
+  
+  <!-- Job Roles Panel -->
+  <div id="roles" class="tab-content">
+    <div class="filter-container">
+      <select id="roleSearchSelect" class="filter-select">
+        <option value="">All Roles</option>
+      </select>
+    </div>
+    <div class="grid" id="rolesGrid">
+      <div class="loading">Loading job roles...</div>
+    </div>
+  </div>
+
+  <!-- Trending Roles Panel -->
+  <div id="trending" class="tab-content">
+    <div class="filter-container">
+      <p style="color: var(--primary); font-weight: 600; margin: 0; text-align: center;">
+        Hot & In-Demand Roles Right Now
+      </p>
+    </div>
+    <div class="grid" id="trendingGrid">
+      <div class="loading">Loading trending roles...</div>
+    </div>
+  </div>
+
+  <script>
+    // Global variables to store data
+    let roadmaps = [];
+    let jobRoles = [];
+    let trendingRoles = [];
+
+    // === DATA LOADING FUNCTIONS ===
+    async function loadRoadmaps() {
+      try {
+        const response = await fetch('roadmaps.json');
+        if (!response.ok) throw new Error('Failed to load roadmaps data');
+        const data = await response.json();
+        roadmaps = data.roadmaps;
+        renderRoadmaps();
+        populateRoadmapDropdown();
+      } catch (error) {
+        console.error('Error loading roadmaps:', error);
+        document.getElementById('roadmapsGrid').innerHTML = 
+          '<div class="error">Failed to load roadmaps. Please check if roadmaps.json exists.</div>';
+      }
+    }
+
+    async function loadJobRoles() {
+      try {
+        const response = await fetch('job-roles.json');
+        if (!response.ok) throw new Error('Failed to load job roles data');
+        const data = await response.json();
+        jobRoles = data.jobRoles;
+        renderRoles();
+        populateRoleDropdown();
+      } catch (error) {
+        console.error('Error loading job roles:', error);
+        document.getElementById('rolesGrid').innerHTML = 
+          '<div class="error">Failed to load job roles. Please check if job-roles.json exists.</div>';
+      }
+    }
+
+    async function loadTrendingRoles() {
+      try {
+        const response = await fetch('trending-roles.json');
+        if (!response.ok) throw new Error('Failed to load trending roles data');
+        const data = await response.json();
+        trendingRoles = data.trendingRoles || [];
+        renderTrendingRoles();
+      } catch (error) {
+        console.error('Error loading trending roles:', error);
+        document.getElementById('trendingGrid').innerHTML = 
+          '<div class="error">Failed to load trending roles. Check if trending-roles.json exists.</div>';
+      }
+    }
+
+    // === RENDER FUNCTIONS ===
+    function renderRoadmaps(difficulty = 'all', selectedTitle = '') {
+      const roadmapsGrid = document.getElementById('roadmapsGrid');
+      roadmapsGrid.innerHTML = '';
+      
+      let filteredRoadmaps = roadmaps;
+      if (difficulty !== 'all') {
+        filteredRoadmaps = filteredRoadmaps.filter(r => r.difficulty === difficulty);
+      }
+      if (selectedTitle) {
+        filteredRoadmaps = filteredRoadmaps.filter(r => r.title === selectedTitle);
+      }
+      
+      if (filteredRoadmaps.length === 0) {
+        roadmapsGrid.innerHTML = '<div class="error">No roadmaps found matching your criteria.</div>';
+        return;
+      }
+
+      filteredRoadmaps.forEach((roadmap, idx) => {
+        setTimeout(() => {
+          const card = document.createElement('div');
+          card.className = 'roadmap-card';
+          card.style.animationDelay = (idx * 0.1) + 's';
+         
+          let topicsHTML = '';
+          ['beginner', 'intermediate', 'advanced', 'expert'].forEach(level => {
+            if (roadmap.levels[level] && roadmap.levels[level].length > 0) {
+              const levelLabel = level.charAt(0).toUpperCase() + level.slice(1);
+              const difficultyClass = `${level}-badge`;
+             
+              topicsHTML += `<div class="card-section">
+                <div class="section-title">${levelLabel} <span class="difficulty-badge ${difficultyClass}">${level.toUpperCase()}</span></div>
+                <ul class="topic-list">`;
+             
+              roadmap.levels[level].forEach(item => {
+                topicsHTML += `
+                  <li class="topic-item">
+                    <span class="topic-topic">${item.topic}</span>:
+                    <span class="topic-concepts">${item.concepts.join(', ')}</span>
+                    ${item.description ? `<div class="prerequisites">${item.description}</div>` : ''}
+                  </li>`;
+              });
+              topicsHTML += `</ul></div>`;
+            }
+          });
+         
+          card.innerHTML = `
+            <div class="card-header">
+              <img src="${roadmap.image.trim()}" alt="${roadmap.title}" class="card-icon">
+              <h3 class="card-title">${roadmap.title}</h3>
+            </div>
+            <p class="card-desc">${roadmap.description}</p>
+            ${topicsHTML}
+            <div class="tools-section">
+              <strong>Tools:</strong> ${roadmap.tools.join(', ')}
+            </div>
+          `;
+          roadmapsGrid.appendChild(card);
+        }, idx * 50);
+      });
+    }
+
+    function renderRoles(selectedTitle = '') {
+      const rolesGrid = document.getElementById('rolesGrid');
+      rolesGrid.innerHTML = '';
+      
+      let filteredRoles = jobRoles;
+      if (selectedTitle) {
+        filteredRoles = filteredRoles.filter(r => r.title === selectedTitle);
+      }
+      
+      if (filteredRoles.length === 0) {
+        rolesGrid.innerHTML = '<div class="error">No job roles found matching your criteria.</div>';
+        return;
+      }
+
+      filteredRoles.forEach((role, idx) => {
+        setTimeout(() => {
+          const card = document.createElement('div');
+          card.className = 'role-card';
+          card.style.animationDelay = (idx * 0.1) + 's';
+         
+          const responsibilitiesHTML = role.responsibilities.map(r => `<li>${r}</li>`).join('');
+          const skillsHTML = role.skills.map(s => `<span class="tag">${s}</span>`).join('');
+          const toolsHTML = role.tools.map(t => `<span class="tag">${t}</span>`).join('');
+         
+          card.innerHTML = `
+            <div class="card-header">
+              <img src="${role.image}" alt="${role.title}" class="card-icon">
+              <h3 class="card-title">${role.title}</h3>
+            </div>
+            <p class="card-desc">${role.description}</p>
+            <div class="card-section">
+              <div class="section-title">Responsibilities</div>
+              <ul class="topic-list">${responsibilitiesHTML}</ul>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Key Skills</div>
+              <div class="tags-container">
+                ${skillsHTML}
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Tools & Technologies</div>
+              <div class="tags-container">
+                ${toolsHTML}
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Salary (INR)</div>
+              ${role.salary}
+            </div>
+            <div class="tips">
+              <strong>Tip:</strong> ${role.tips}
+            </div>
+          `;
+          rolesGrid.appendChild(card);
+        }, idx * 50);
+      });
+    }
+
+    function renderTrendingRoles() {
+      const trendingGrid = document.getElementById('trendingGrid');
+      trendingGrid.innerHTML = '';
+
+      if (trendingRoles.length === 0) {
+        trendingGrid.innerHTML = '<div class="error">No trending roles available right now.</div>';
+        return;
+      }
+
+      trendingRoles.forEach((role, idx) => {
+        setTimeout(() => {
+          const card = document.createElement('div');
+          card.className = 'role-card';
+          card.style.animationDelay = (idx * 0.1) + 's';
+
+          const responsibilitiesHTML = role.responsibilities.map(r => `<li>${r}</li>`).join('');
+          const skillsHTML = role.skills.map(s => `<span class="tag">${s}</span>`).join('');
+          const toolsHTML = role.tools.map(t => `<span class="tag">${t}</span>`).join('');
+
+          card.innerHTML = `
+            <div class="card-header">
+              <img src="${role.image}" alt="${role.title}" class="card-icon">
+              <h3 class="card-title">${role.title} <span style="color:#ff3b30; font-size:0.8rem;">Trending</span></h3>
+            </div>
+            <p class="card-desc">${role.description}</p>
+            <div class="card-section">
+              <div class="section-title">Responsibilities</div>
+              <ul class="topic-list">${responsibilitiesHTML}</ul>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Key Skills</div>
+              <div class="tags-container">${skillsHTML}</div>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Tools & Technologies</div>
+              <div class="tags-container">${toolsHTML}</div>
+            </div>
+            <div class="card-section">
+              <div class="section-title">Salary (INR)</div>
+              ${role.salary}
+            </div>
+            <div class="tips">
+              <strong>Pro Tip:</strong> ${role.tips}
+            </div>
+          `;
+          trendingGrid.appendChild(card);
+        }, idx * 50);
+      });
+    }
+
+    // === DROPDOWN POPULATION ===
+    function populateRoadmapDropdown() {
+      const searchSelect = document.getElementById('searchSelect');
+      while (searchSelect.children.length > 1) {
+        searchSelect.removeChild(searchSelect.lastChild);
+      }
+      roadmaps.forEach(roadmap => {
+        const option = document.createElement('option');
+        option.value = roadmap.title;
+        option.textContent = roadmap.title;
+        searchSelect.appendChild(option);
+      });
+    }
+
+    function populateRoleDropdown() {
+      const roleSearchSelect = document.getElementById('roleSearchSelect');
+      while (roleSearchSelect.children.length > 1) {
+        roleSearchSelect.removeChild(roleSearchSelect.lastChild);
+      }
+      jobRoles.forEach(role => {
+        const option = document.createElement('option');
+        option.value = role.title;
+        option.textContent = role.title;
+        roleSearchSelect.appendChild(option);
+      });
+    }
+
+    // === EVENT LISTENERS ===
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeToggle = document.getElementById('themeToggle');
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const difficultyFilter = document.getElementById('difficultyFilter');
+      const searchSelect = document.getElementById('searchSelect');
+      const roleSearchSelect = document.getElementById('roleSearchSelect');
+     
+      // === TAB SWITCHING ===
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          const tabId = btn.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+
+          if (tabId === 'trending' && trendingRoles.length > 0) {
+            renderTrendingRoles();
+          }
+        });
+      });
+     
+      // === THEME TOGGLE ===
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          document.body.classList.toggle('light-mode');
+          const isLight = document.body.classList.contains('light-mode');
+          themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+
+          // Update SVG icon
+          const icon = themeToggle.querySelector('svg');
+          if (isLight) {
+            // Sun icon
+            icon.innerHTML = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+          } else {
+            // Moon icon
+            icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+          }
+        });
+      }
+
+      // === DIFFICULTY FILTER ===
+      if (difficultyFilter) {
+        difficultyFilter.addEventListener('change', (e) => {
+          renderRoadmaps(e.target.value, searchSelect.value);
+        });
+      }
+
+      // === DROPDOWN SELECT FOR ROADMAPS ===
+      if (searchSelect) {
+        searchSelect.addEventListener('change', (e) => {
+          renderRoadmaps(difficultyFilter.value, e.target.value);
+        });
+      }
+
+      // === DROPDOWN SELECT FOR JOB ROLES ===
+      if (roleSearchSelect) {
+        roleSearchSelect.addEventListener('change', (e) => {
+          renderRoles(e.target.value);
+        });
+      }
+     
+      // === INITIALIZE DATA LOADING ===
+      loadRoadmaps();
+      loadJobRoles();
+      loadTrendingRoles();
+    });
+  </script>
+</body>
+</html>
