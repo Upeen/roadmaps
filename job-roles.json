@@ -1,0 +1,950 @@
+{
+  "jobRoles": [
+    {
+      "title": "Data Analyst",
+      "description": "Analyze structured data to uncover trends, generate reports, and provide actionable insights—from basic reporting to strategic influence and predictive modeling.",
+      "image": "https://cdn.simpleicons.org/tableau/1E75B2",
+      "difficulty": "beginner-to-advanced",
+      "responsibilities": [
+        "Clean and organize raw data from multiple sources",
+        "Create and maintain basic recurring reports in Excel/Google Sheets",
+        "Build simple to automated dashboards using Tableau/Power BI/Looker",
+        "Perform data validation and quality checks",
+        "Respond to ad-hoc data requests",
+        "Calculate descriptive statistics and trends",
+        "Document data sources and methodologies",
+        "Support KPI tracking and executive presentations",
+        "Perform exploratory data analysis (EDA) on large datasets",
+        "Conduct cohort, funnel, segmentation, and A/B tests",
+        "Automate reporting using SQL/Python",
+        "Define company-wide KPIs and OKRs",
+        "Build predictive models (e.g., churn, LTV)",
+        "Mentor junior analysts",
+        "Present insights to C-suite and board",
+        "Collaborate with data engineering on pipeline requirements",
+        "Support forecasting and budgeting",
+        "Design experiment frameworks for product teams",
+        "Implement customer lifetime value (CLV) models",
+        "Build attribution models for marketing spend"
+      ],
+      "skills": [
+        "Excel", "Google Sheets", "SQL (Basic to Advanced)", "Data Cleaning", "Basic to Advanced Statistics",
+        "Python (pandas, NumPy, scikit-learn)", "Data Visualization", "A/B Testing", "Business Metrics",
+        "Critical Thinking", "Communication", "Leadership", "Domain Knowledge", "Stakeholder Management",
+        "Experiment Design", "Forecasting", "Customer Analytics", "Attribution Modeling"
+      ],
+      "tools": [
+        "Microsoft Excel", "Google Sheets", "SQL (MySQL, PostgreSQL, BigQuery, Snowflake)",
+        "Tableau Desktop", "Power BI", "Looker", "Google Data Studio",
+        "Python (pandas, matplotlib, seaborn, statsmodels, scikit-learn)",
+        "Jupyter Notebook", "Git", "Google Analytics", "Amplitude", "Mixpanel", "GA4",
+        "Redash", "Mode Analytics", "Jira", "Confluence", "Slack", "Notion", "Google Slides", "Figma",
+        "Segment", "Snowplow", "Heap", "Adobe Analytics"
+      ],
+      "salary": "₹3.5L - ₹20L per year",
+      "tips": "Master Excel and SQL first. Focus on business impact. Learn to tell stories with data. Automate tasks. Become a domain expert. Bridge data and strategy. Prioritize high-leverage analyses.",
+      "levels": {
+        "beginner": [
+          { "topic": "Excel Mastery", "concepts": ["VLOOKUP", "Pivot Tables", "Conditional Formatting", "Charts", "Data Validation", "Power Query", "Power Pivot"] },
+          { "topic": "Intro to SQL", "concepts": ["SELECT", "WHERE", "JOIN", "GROUP BY", "Aggregations", "Subqueries", "CASE Statements"] },
+          { "topic": "Advanced SQL", "concepts": ["Window Functions", "CTEs", "Complex Joins", "Performance Tuning", "Indexing", "Query Optimization", "Dynamic SQL"] },
+          { "topic": "Data Storytelling", "concepts": ["Narrative Flow", "Audience Adaptation", "Insight Prioritization", "Actionable Recommendations", "Executive Summaries"] }
+        ],
+        "intermediate": [
+          { "topic": "Dashboard Design", "concepts": ["Tableau", "Power BI", "Interactive Filters", "Drill-downs", "KPIs", "Layout Best Practices", "Color Theory", "User Experience"] },
+          { "topic": "Python for Analysis", "concepts": ["pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter", "Automation Scripts", "Data Wrangling", "API Integration"] },
+          { "topic": "Experiment Analysis", "concepts": ["A/B Testing", "Statistical Significance", "Sample Size", "p-value", "Confidence Intervals", "Power Analysis", "Sequential Testing"] }
+        ],
+        "advanced": [
+          { "topic": "Predictive Modeling", "concepts": ["Linear Regression", "Logistic Regression", "Time Series", "Feature Selection", "Model Validation", "Hyperparameter Tuning"] },
+          { "topic": "Predictive Analytics", "concepts": ["Regression", "Time Series", "Survival Analysis", "Propensity Modeling", "Uplift Modeling", "Bayesian Methods"] },
+          { "topic": "Analytics Architecture", "concepts": ["Data Modeling", "Kimball", "Star Schema", "Metrics Layer", "Semantic Layer", "Data Contracts"] },
+          { "topic": "Strategic Influence", "concepts": ["OKR Alignment", "Executive Reporting", "ROI Analysis", "Cross-functional Leadership", "Change Management", "Data Democratization"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "marketingAnalytics": ["Funnel Analysis", "Cohort Retention", "Attribution Modeling", "Customer Segmentation", "MMM (Marketing Mix Modeling)", "ROAS Optimization"],
+        "productAnalytics": ["User Behavior", "Feature Adoption", "Churn Prediction", "Engagement Metrics", "NPS Analysis", "Journey Mapping"],
+        "growthAnalytics": ["Acquisition", "Activation", "Retention", "Referral", "Revenue (AARRR)", "Virality", "North Star Metric"],
+        "financeAnalytics": ["Unit Economics", "CAC/LTV", "Burn Rate", "Forecasting", "Budget Variance", "Cash Flow Modeling"],
+        "operationsAnalytics": ["Supply Chain Optimization", "Inventory Turnover", "Demand Planning", "SLA Tracking"]
+      }
+    },
+    {
+      "title": "Business Intelligence (BI) Analyst",
+      "description": "Design and maintain enterprise reporting systems, dashboards, and data models to enable self-service analytics.",
+      "image": "https://cdn.simpleicons.org/powerbi/F2C811",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Design and build enterprise-level dashboards and reports",
+        "Create and maintain star schema data models in warehouse",
+        "Implement ETL/ELT processes for BI data sources",
+        "Enable self-service analytics for non-technical users",
+        "Ensure 100% data accuracy and consistency across reports",
+        "Train business users on BI tools and best practices",
+        "Optimize dashboard performance and query efficiency",
+        "Conduct requirements gathering workshops with stakeholders",
+        "Maintain documentation of data sources and transformations",
+        "Support audit and compliance reporting",
+        "Implement row-level security (RLS)",
+        "Design drill-through and drill-across reports",
+        "Create composite models and aggregations"
+      ],
+      "skills": [
+        "SQL", "Data Modeling", "ETL/ELT", "BI Tools", "Data Governance", "Requirements Gathering",
+        "Training & Enablement", "Performance Tuning", "Documentation", "DAX/MDX", "Semantic Modeling"
+      ],
+      "tools": [
+        "Power BI", "Tableau", "Looker", "dbt", "Snowflake", "Fivetran", "Stitch", "Airflow",
+        "Redshift", "BigQuery", "Excel", "Confluence", "Sigma Computing", "ThoughtSpot", "Metabase"
+      ],
+      "salary": "₹7L - ₹16L per year",
+      "tips": "Master data modeling and ETL. Focus on usability and performance. Be the bridge between data and business. Standardize metrics. Reduce dependency on IT.",
+      "levels": {
+        "beginner": [
+          { "topic": "BI Tool Proficiency", "concepts": ["Calculated Fields", "LOD Expressions", "Parameters", "Dashboards", "Stories", "Data Blending"] }
+        ],
+        "intermediate": [
+          { "topic": "Data Modeling", "concepts": ["Star Schema", "Fact/Dimension Tables", "Slowly Changing Dimensions", "Conformed Dimensions", "Bridge Tables"] },
+          { "topic": "ETL for BI", "concepts": ["dbt", "Fivetran", "Stitch", "Transformation Logic", "Incremental Loads", "Data Vault"] }
+        ],
+        "advanced": [
+          { "topic": "Self-Service Enablement", "concepts": ["Semantic Layer", "Metric Store", "Access Control", "Governance", "Certified Datasets", "Usage Analytics"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "selfServiceBI": ["Semantic Layers", "Metric Definitions", "Access Control", "Governance", "Certified Content"],
+        "enterpriseReporting": ["Executive Dashboards", "Regulatory Reports", "Audit Trails", "Financial Close Support"],
+        "embeddedAnalytics": ["White-label BI", "Customer-facing Dashboards", "Tenant Isolation"]
+      }
+    },
+    {
+      "title": "Analytics Engineer",
+      "description": "Build reliable, scalable data pipelines and models to power analytics, blending data engineering and analytics.",
+      "image": "https://cdn.simpleicons.org/dbt/FF6B6B",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Build and maintain dbt models for analytics",
+        "Design modular, reusable data transformation logic",
+        "Implement data quality tests and monitoring",
+        "Optimize SQL performance and query costs",
+        "Create and document data lineage and definitions",
+        "Collaborate with analysts to define requirements",
+        "Build incremental and materialized models",
+        "Support data warehouse schema design",
+        "Automate data contracts and SLAs",
+        "Enable version control and CI/CD for data models",
+        "Implement snapshotting for slowly changing dimensions",
+        "Design metrics layer and semantic models",
+        "Support real-time analytics use cases"
+      ],
+      "skills": [
+        "SQL", "dbt", "Data Modeling", "Python", "Git", "Data Quality", "Performance Tuning", "Documentation", "Collaboration", "Jinja Templating", "Testing Frameworks"
+      ],
+      "tools": [
+        "dbt Cloud/Core", "Snowflake", "BigQuery", "Redshift", "Airflow", "Git/GitHub", "Jinja",
+        "VS Code", "Great Expectations", "Elementary", "Slack", "Notion", "Datafold", "Coalesce"
+      ],
+      "salary": "₹10L - ₹22L per year",
+      "tips": "Think like an engineer, act like an analyst. Master dbt and SQL performance. Own the analytics layer. Write tests like your job depends on it.",
+      "levels": {
+        "beginner": [
+          { "topic": "dbt Fundamentals", "concepts": ["Models", "Seeds", "Snapshots", "Tests", "Docs", "Jinja", "Sources"] }
+        ],
+        "intermediate": [
+          { "topic": "Advanced Data Modeling", "concepts": ["Incremental Models", "Materializations", "Exposures", "Macros", "Packages", "Analysis"] },
+          { "topic": "Data Ops", "concepts": ["CI/CD for Data", "Schema Changes", "Impact Analysis", "Data Contracts", "Slim CI"] }
+        ],
+        "advanced": [
+          { "topic": "Metrics Layer", "concepts": ["Headless BI", "MetricFlow", "Centralized Definitions", "Versioning", "Metric Trees"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "metricsLayer": ["Centralized Metrics", "Semantic Consistency", "Versioned Definitions", "Cross-tool Compatibility"],
+        "dataObservability": ["Anomaly Detection", "Freshness", "Volume Monitoring", "Lineage", "Root Cause Analysis"],
+        "realTimeAnalytics": ["Streaming Transformations", "Change Data Capture", "Event-driven Models"]
+      }
+    },
+    {
+      "title": "Data Engineer",
+      "description": "Design, build, and maintain data pipelines and infrastructure for reliable, scalable data flow—from batch pipelines to enterprise platform leadership.",
+      "image": "https://cdn.simpleicons.org/apacheairflow/017CEE",
+      "difficulty": "intermediate-to-expert",
+      "responsibilities": [
+        "Design and implement ETL/ELT pipelines",
+        "Build data ingestion from APIs, databases, and files",
+        "Ensure data quality, schema validation, and monitoring",
+        "Implement data lakes and modern data warehouses",
+        "Optimize storage and processing costs",
+        "Support batch and real-time data processing",
+        "Write production-grade Python/Spark code",
+        "Manage data pipeline orchestration and scheduling",
+        "Troubleshoot pipeline failures",
+        "Architect enterprise data platforms and lakehouses",
+        "Lead data migration and integration projects",
+        "Mentor junior engineers",
+        "Define engineering standards and best practices",
+        "Implement data governance and security",
+        "Evaluate new data technologies",
+        "Build self-service infrastructure",
+        "Define 3–5 year platform roadmap",
+        "Lead multiple engineering teams",
+        "Manage vendor relationships and cloud spend",
+        "Represent data engineering in C-suite",
+        "Implement data mesh and domain-driven design",
+        "Design event-driven architectures",
+        "Support ML feature stores and online serving"
+      ],
+      "skills": [
+        "Python", "SQL", "ETL/ELT", "Cloud Platforms (AWS/GCP/Azure)", "Data Modeling", "Apache Spark", "Kafka",
+        "System Design", "Leadership", "Cloud Architecture", "Data Governance", "Performance Tuning", "Team Mentoring",
+        "Cost Optimization", "Security", "Technical Leadership", "Platform Strategy", "Budget Management",
+        "Event Streaming", "Feature Stores", "Data Contracts"
+      ],
+      "tools": [
+        "Apache Airflow", "Apache Spark", "Kafka", "Snowflake", "BigQuery", "AWS (S3, Glue, Lambda, EMR)",
+        "GCP (Dataflow, Pub/Sub)", "dbt", "Docker", "Git", "Terraform", "Databricks", "Kubernetes",
+        "Delta Lake", "Apache Iceberg", "Prometheus", "Grafana", "PagerDuty", "Collibra", "Monte Carlo",
+        "Feast", "Hightouch", "Census", "Prefect", "Dagster"
+      ],
+      "salary": "₹8L - ₹55L per year",
+      "tips": "Focus on reliability and scalability. Master one cloud platform. Learn Spark and streaming. Think in systems. Own the platform. Balance speed and stability. Automate toil.",
+      "levels": {
+        "beginner": [
+          { "topic": "ETL Pipelines", "concepts": ["Airflow DAGs", "Tasks", "Operators", "Scheduling", "Retries", "SLAs", "XComs"] },
+          { "topic": "Cloud Data Warehouses", "concepts": ["Snowflake", "BigQuery", "Redshift", "Partitioning", "Clustering", "Cost Optimization", "Virtual Warehouses"] }
+        ],
+        "intermediate": [
+          { "topic": "Big Data Processing", "concepts": ["Apache Spark", "PySpark", "DataFrames", "RDDs", "Job Optimization", "Shuffling", "Broadcast Variables"] },
+          { "topic": "Streaming Data", "concepts": ["Kafka", "Flink", "Spark Streaming", "Event Time", "Watermarks", "Exactly-once", "Stateful Processing"] }
+        ],
+        "advanced": [
+          { "topic": "Data Orchestration", "concepts": ["Prefect", "Dagster", "Dynamic DAGs", "Event-Driven Pipelines", "Task Dependencies", "Orchestration as Code"] },
+          { "topic": "Data Lakehouse", "concepts": ["Delta Lake", "Apache Iceberg", "Hudi", "Table Formats", "ACID Transactions", "Schema Evolution"] },
+          { "topic": "Platform Engineering", "concepts": ["Self-service Data", "Data Mesh", "Access Control", "Cost Attribution", "SLOs/SLAs"] }
+        ],
+        "expert": [
+          { "topic": "Data Mesh Architecture", "concepts": ["Domain-Oriented Ownership", "Self-Serve Infrastructure", "Federated Governance", "Product Thinking"] },
+          { "topic": "Platform Leadership", "concepts": ["Roadmapping", "OKRs", "Headcount Planning", "Tech Debt Management", "Vendor Selection"] },
+          { "topic": "Enterprise Scale", "concepts": ["Multi-cloud", "Global Replication", "Disaster Recovery", "Cost Governance", "Data Sovereignty"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "batchProcessing": ["Scheduled Jobs", "Backfills", "Idempotency", "Data Lake Ingestion", "Partition Pruning"],
+        "realTimePipelines": ["Change Data Capture", "Event-Driven", "Low Latency", "Kappa Architecture"],
+        "dataMesh": ["Domain Ownership", "Self-service", "Federated Governance", "Data Products"],
+        "lakehouseArchitecture": ["Open Formats", "Schema Evolution", "Time Travel", "Table Optimization"],
+        "platformStrategy": ["Modern Data Stack", "ROI Modeling", "Adoption Metrics", "TCO Analysis"],
+        "enterpriseData": ["Global Data Fabric", "Zero Trust", "Regulatory Compliance", "Data Residency"],
+        "mlFeatureEngineering": ["Feature Stores", "Online/Offline Consistency", "Point-in-time Lookups"]
+      }
+    },
+    {
+      "title": "Big Data Engineer",
+      "description": "Specialize in processing and managing petabyte-scale data using distributed systems and big data technologies.",
+      "image": "https://cdn.simpleicons.org/apachehadoop/FFD800",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Design and optimize petabyte-scale data pipelines",
+        "Manage and scale Hadoop/Spark clusters",
+        "Implement data partitioning, bucketing, and compression",
+        "Tune Spark jobs for memory, CPU, and shuffle",
+        "Build real-time analytics using Kafka and Spark Streaming",
+        "Ensure fault tolerance, data recovery, and high availability",
+        "Migrate legacy Hadoop systems to cloud-native",
+        "Implement data lake governance and access control",
+        "Monitor cluster health and resource utilization",
+        "Write Scala/Java for custom UDFs and optimizations",
+        "Design data partitioning strategies for PB-scale tables",
+        "Implement cost-effective storage tiers",
+        "Support machine learning at scale"
+      ],
+      "skills": [
+        "Apache Spark", "Hadoop", "Scala/Java", "Hive", "Performance Tuning", "Cluster Management", "Data Lakes", "Distributed Systems",
+        "Resource Management", "Data Compression", "File Formats", "Query Optimization"
+      ],
+      "tools": [
+        "Hadoop", "Apache Spark", "Hive", "HBase", "Presto/Trino", "YARN", "Cloudera/Hortonworks", "Kafka",
+        "Zookeeper", "Ambari", "Ganglia", "Parquet/ORC", "Avro", "Kudu", "Impala"
+      ],
+      "salary": "₹15L - ₹30L per year",
+      "tips": "Master Spark internals. Focus on optimization. Understand data locality and shuffles. Know when to use SQL vs code. Plan for failure.",
+      "levels": {
+        "advanced": [
+          { "topic": "Spark Optimization", "concepts": ["Catalyst Optimizer", "Tungsten", "Shuffling", "Broadcast Joins", "Caching", "Adaptive Query Execution"] },
+          { "topic": "Cluster Management", "concepts": ["YARN", "Resource Manager", "Node Labels", "Capacity Scheduler", "High Availability", "Kerberos"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataLakes": ["HDFS", "S3", "Partitioning", "File Formats (Parquet, ORC)", "Compaction", "Z-ordering"],
+        "realTimeAnalytics": ["Kafka + Spark Streaming", "KSQL", "Flink", "Structured Streaming"],
+        "mlAtScale": ["Distributed Training", "Petabyte Feature Engineering", "Model Parallelism"]
+      }
+    },
+    {
+      "title": "Data Architect",
+      "description": "Design the overall data strategy, architecture, and roadmap to align with business goals and scalability needs—including C-level vision.",
+      "image": "https://cdn.simpleicons.org/architecture/000000",
+      "difficulty": "expert",
+      "responsibilities": [
+        "Define enterprise data architecture strategy and principles",
+        "Design data flow across domains, systems, and clouds",
+        "Establish data governance, compliance, and security standards",
+        "Lead large-scale data migration and modernization",
+        "Evaluate and select data technologies and platforms",
+        "Ensure scalability, performance, and disaster recovery",
+        "Align data strategy with business OKRs and KPIs",
+        "Create data architecture blueprints and roadmaps",
+        "Chair architecture review boards",
+        "Mentor architects and engineers",
+        "Set 5–10 year enterprise data vision",
+        "Approve major data technology decisions",
+        "Chair enterprise data governance council",
+        "Represent data in board meetings",
+        "Secure multi-year transformation budget",
+        "Design data mesh and domain-driven architectures",
+        "Define data product standards",
+        "Oversee master data management (MDM)"
+      ],
+      "skills": [
+        "Data Strategy", "Architecture Design", "Governance", "Cloud Platforms", "Leadership", "TOGAF", "Data Modeling",
+        "Risk Assessment", "Executive Leadership", "Strategic Vision", "Business Alignment", "Change Management", "C-Suite Communication",
+        "Data Mesh", "MDM", "Integration Patterns"
+      ],
+      "tools": [
+        "Erwin", "Lucidchart", "Collibra", "Alation", "AWS/GCP/Azure", "Data Catalogs", "Confluence", "Miro",
+        "Enterprise Architect", "Governance Platforms", "Strategy Frameworks", "Board Reporting Tools", "Financial Modeling", "Regulatory Compliance Tools",
+        "Informatica MDM", "Reltio", "Profisee"
+      ],
+      "salary": "₹25L - ₹1.2Cr+ per year",
+      "tips": "See the big picture. Align data with business. Master governance and strategy. Think 5–10 years ahead. Build trust with leaders. Speak in business outcomes.",
+      "levels": {
+        "expert": [
+          { "topic": "Enterprise Architecture", "concepts": ["TOGAF", "Data Domains", "Integration Patterns", "Master Data Management", "Event-Driven Architecture"] },
+          { "topic": "Data Governance", "concepts": ["Policies", "Stewardship", "Metadata Management", "Compliance (GDPR, CCPA)", "Data Classification"] },
+          { "topic": "C-Suite Influence", "concepts": ["Board Reporting", "Data ROI", "Risk Management", "Regulatory Strategy", "Data Monetization"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataStrategy": ["Roadmapping", "Technology Evaluation", "ROI Justification", "Adoption Frameworks"],
+        "masterData": ["Golden Records", "Entity Resolution", "Hierarchy Management", "Data Quality Rules"],
+        "enterpriseDataVision": ["Data as an Asset", "Monetization", "AI Readiness", "Digital Twin"],
+        "regulatoryArchitecture": ["Global Compliance", "Data Sovereignty", "Ethical AI", "Auditability"]
+      }
+    },
+    {
+      "title": "Data Product Manager",
+      "description": "Define, build, and launch data products that deliver measurable business value—from internal tools to customer-facing features and monetization.",
+      "image": "https://cdn.simpleicons.org/figma/F24E1E",
+      "difficulty": "intermediate-to-expert",
+      "responsibilities": [
+        "Define vision, roadmap, and OKRs for data products",
+        "Gather requirements from internal and external users",
+        "Prioritize features using RICE/ICE frameworks",
+        "Collaborate with engineers, analysts, and designers",
+        "Define and track product success metrics",
+        "Conduct user research, interviews, and A/B tests",
+        "Write PRDs, user stories, and acceptance criteria",
+        "Launch MVPs and iterate based on feedback",
+        "Measure ROI and business impact",
+        "Communicate progress to stakeholders",
+        "Build and lead a team of data PMs",
+        "Own P&L and revenue targets",
+        "Establish product development lifecycle",
+        "Foster data product culture",
+        "Negotiate partnerships",
+        "Represent data products in executive leadership",
+        "Design data APIs and developer experiences",
+        "Manage data product lifecycle from ideation to sunset"
+      ],
+      "skills": [
+        "Product Management", "Data Literacy", "SQL", "Stakeholder Management", "Roadmapping", "Agile/Scrum",
+        "User Research", "A/B Testing", "Metrics Definition", "Product Leadership", "P&L Management",
+        "Business Acumen", "Negotiation", "Financial Modeling", "API Design", "Developer Experience"
+      ],
+      "tools": [
+        "Jira", "Confluence", "Figma", "Amplitude", "Mixpanel", "Notion", "Miro", "Google Analytics",
+        "Segment", "Productboard", "CRM (Salesforce)", "Financial Modeling", "OKR Software", "Contract Tools", "Presentation Decks",
+        "Postman", "Swagger", "LaunchDarkly"
+      ],
+      "salary": "₹12L - ₹80L+ per year",
+      "tips": "Be user-obsessed. Measure everything. Bridge business, data, and tech. Treat data as a product. Focus on customer value. Build scalable teams. Think in ecosystems.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Data Product Strategy", "concepts": ["OKRs", "Success Metrics", "User Personas", "Journey Mapping", "Data Product Canvas"] },
+          { "topic": "Experimentation", "concepts": ["Hypothesis", "MVP", "A/B Testing", "Statistical Power", "Success Criteria"] }
+        ],
+        "advanced": [
+          { "topic": "Monetization", "concepts": ["Pricing Models", "Data as a Product", "Customer ROI", "Upsell Strategies", "Marketplace Design"] }
+        ],
+        "expert": [
+          { "topic": "Data Product Portfolio", "concepts": ["Prioritization Frameworks", "Kill Criteria", "Success Metrics", "Roadmap Alignment", "Portfolio Balancing"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "internalTools": ["Analyst Platforms", "Self-service Dashboards", "Alerting Systems", "Data Catalogs"],
+        "customerFacing": ["Recommendation Engines", "Personalization", "Predictive Features", "Data APIs"],
+        "dataMonetization": ["API Products", "Data Marketplaces", "Subscription Models", "Data Syndication"],
+        "aiProductStrategy": ["AI Feature Integration", "Ethical AI", "User Trust", "Explainability"]
+      }
+    },
+    {
+      "title": "Data Governance Analyst",
+      "description": "Implement and manage data governance policies, standards, and compliance across the organization.",
+      "image": "https://cdn.simpleicons.org/collibra/FF6B6B",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Define and document data policies and standards",
+        "Manage business glossary and data catalog",
+        "Conduct data quality assessments and audits",
+        "Support compliance with GDPR, CCPA, and local laws",
+        "Train data stewards and owners across departments",
+        "Monitor policy adherence and generate reports",
+        "Resolve data ownership and access conflicts",
+        "Maintain metadata and data lineage",
+        "Facilitate data governance council meetings",
+        "Track and report on governance KPIs",
+        "Implement data classification frameworks",
+        "Support data access request (DSAR) processes",
+        "Design data retention and archiving policies"
+      ],
+      "skills": [
+        "Data Governance", "Metadata Management", "Compliance", "Policy Writing", "Stakeholder Management", "Training", "Auditing",
+        "Data Classification", "Privacy", "Risk Management"
+      ],
+      "tools": [
+        "Collibra", "Alation", "Informatica EDC", "Atlan", "Excel", "Confluence", "Jira", "Miro", "PowerPoint",
+        "OneTrust", "BigID", "Secoda"
+      ],
+      "salary": "₹8L - ₹18L per year",
+      "tips": "Be the voice of data trust. Build relationships. Focus on adoption, not just policy. Start with high-impact domains. Use automation where possible.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Data Cataloging", "concepts": ["Business Glossary", "Data Lineage", "Tagging", "Ownership", "Data Dictionary"] },
+          { "topic": "Policy Implementation", "concepts": ["Access Control", "Data Classification", "Retention Policies", "Audit Logs", "Data Masking"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataStewardship": ["Ownership Models", "Issue Resolution", "Training Programs", "Steward Networks"],
+        "compliance": ["PII Handling", "Data Minimization", "Consent Management", "Right to be Forgotten"],
+        "aiGovernance": ["Model Inventory", "AI Risk Assessment", "Ethical Use Policies"]
+      }
+    },
+    {
+      "title": "Data Quality Engineer",
+      "description": "Design, implement, and monitor data quality frameworks to ensure accuracy, completeness, and reliability.",
+      "image": "https://cdn.simpleicons.org/montecarlo/6C5CE7",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Define data quality metrics and business rules",
+        "Build automated data validation and testing pipelines",
+        "Monitor data freshness, accuracy, and completeness",
+        "Perform root cause analysis on data anomalies",
+        "Collaborate with data producers to fix upstream issues",
+        "Generate data health reports and dashboards",
+        "Implement data quality SLAs and alerting",
+        "Profile new data sources before ingestion",
+        "Maintain data quality documentation and playbooks",
+        "Support audit and compliance data quality checks",
+        "Design anomaly detection systems",
+        "Implement data reconciliation processes"
+      ],
+      "skills": [
+        "Data Validation", "SQL", "Python", "Monitoring", "Root Cause Analysis", "Automation", "Documentation",
+        "Statistical Methods", "Data Profiling", "Reconciliation"
+      ],
+      "tools": [
+        "Great Expectations", "Monte Carlo", "Soda", "dbt Tests", "Airflow", "Datadog", "PagerDuty", "Slack", "Jupyter",
+        "Deequ", "Amundsen", "DataHub"
+      ],
+      "salary": "₹10L - ₹22L per year",
+      "tips": "Automate everything. Prevent, don’t just detect. Partner with producers. Focus on critical data elements (CDEs). Measure cost of poor quality.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Data Validation Frameworks", "concepts": ["Great Expectations", "Custom Validators", "Expectation Suites", "Profiling", "Data Docs"] },
+          { "topic": "Observability", "concepts": ["Anomaly Detection", "Alerting", "SLA Tracking", "Dashboards", "Incident Response"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataHealth": ["Freshness", "Volume", "Schema Drift", "Null Rates", "Distribution Shift"],
+        "mlDataQuality": ["Label Accuracy", "Feature Drift", "Training/Serving Skew", "Data Poisoning Detection"]
+      }
+    },
+    {
+      "title": "DataOps Engineer",
+      "description": "Apply DevOps principles to data pipelines to enable rapid, reliable, and repeatable data delivery.",
+      "image": "https://cdn.simpleicons.org/gitlab/FC6D26",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Implement CI/CD pipelines for data models and code",
+        "Automate testing, deployment, and rollback of data changes",
+        "Manage environment promotion (dev/stage/prod)",
+        "Implement data version control and branching",
+        "Monitor pipeline performance, reliability, and cost",
+        "Reduce time from data change to production insight",
+        "Build self-service deployment tools for analysts",
+        "Enforce code reviews and data quality gates",
+        "Manage infrastructure as code for data platforms",
+        "Support disaster recovery and data rollback",
+        "Implement blue-green deployments for data",
+        "Design data contract testing"
+      ],
+      "skills": [
+        "CI/CD", "Git", "Automation", "Testing", "Monitoring", "Collaboration", "Infrastructure as Code",
+        "Data Contracts", "Environment Management", "Release Engineering"
+      ],
+      "tools": [
+        "GitHub Actions", "GitLab CI", "dbt Cloud", "Airflow", "Terraform", "Docker", "Jenkins", "CircleCI", "Prometheus", "Grafana",
+        "Datafold", "Soda Cloud", "Elementary"
+      ],
+      "salary": "₹14L - ₹30L per year",
+      "tips": "Treat data like code. Automate ruthlessly. Enable self-service. Measure lead time and deployment frequency. Fail fast, recover faster.",
+      "levels": {
+        "advanced": [
+          { "topic": "Data CI/CD", "concepts": ["Pipeline as Code", "Automated Testing", "Canary Deployments", "Rollback", "Schema Contracts"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataDevOps": ["Environment Management", "Feature Flags", "Blue-Green Data", "Data Versioning"],
+        "mlOpsIntegration": ["Model Registry", "Feature Store CI/CD", "Experiment Tracking", "Model Promotion"]
+      }
+    },
+    {
+      "title": "Data Strategy Consultant",
+      "description": "Advise organizations on data maturity, strategy, governance, and transformation to become data-driven.",
+      "image": "https://cdn.simpleicons.org/mckinsey/003087",
+      "difficulty": "expert",
+      "responsibilities": [
+        "Assess organizational data maturity and gaps",
+        "Develop 3–5 year data strategy and transformation roadmap",
+        "Design data governance frameworks and policies",
+        "Lead enterprise-wide data transformation initiatives",
+        "Train leadership and teams on data culture and literacy",
+        "Calculate ROI and business case for data investments",
+        "Facilitate cross-functional alignment on data goals",
+        "Benchmark against industry peers and best practices",
+        "Advise on CDO hiring and org structure",
+        "Support M&A due diligence on data assets",
+        "Design data monetization strategies",
+        "Facilitate data literacy programs"
+      ],
+      "skills": [
+        "Strategy", "Consulting", "Data Maturity", "Change Management", "Executive Communication", "Frameworks (DAMA, CMMI)", "ROI Modeling",
+        "Workshop Facilitation", "Benchmarking", "Org Design"
+      ],
+      "tools": [
+        "PowerPoint", "Miro", "Lucidchart", "Excel", "Data Catalogs", "Survey Tools", "Strategy Frameworks", "Benchmarking Reports",
+        "Mural", "Kahootz", "Mentimeter"
+      ],
+      "salary": "₹20L - ₹45L+ per year",
+      "tips": "Master frameworks (DAMAs, CMMI). Tell compelling stories. Drive change. Focus on outcomes, not activities. Build internal champions.",
+      "levels": {
+        "expert": [
+          { "topic": "Data Maturity Assessment", "concepts": ["DMM", "CDO Agenda", "Capability Mapping", "Benchmarking", "Quick Wins"] },
+          { "topic": "Transformation Leadership", "concepts": ["Change Management", "Culture Building", "ROI Modeling", "Executive Sponsorship", "Pilot Programs"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "dataCulture": ["Literacy Programs", "Champions Network", "Storytelling Workshops", "Data-driven Decision Making"],
+        "governanceStrategy": ["Policy Design", "Data Ethics", "AI Governance", "Regulatory Readiness"]
+      }
+    },
+    {
+      "title": "Chief Data Officer (CDO)",
+      "description": "Executive role responsible for enterprise data strategy, governance, analytics, and AI initiatives.",
+      "image": "https://cdn.simpleicons.org/executivesuite/1E90FF",
+      "difficulty": "expert",
+      "responsibilities": [
+        "Define and execute enterprise data strategy",
+        "Lead data governance, analytics, and AI teams",
+        "Drive data monetization and new revenue streams",
+        "Ensure compliance, ethics, and risk management",
+        "Report to CEO/Board on data performance and ROI",
+        "Secure multi-year budget for data initiatives",
+        "Build data-driven culture across the organization",
+        "Represent company in industry data forums",
+        "Oversee CDO org structure and hiring",
+        "Partner with CIO/CTO on technology alignment",
+        "Champion data as a strategic asset",
+        "Oversee data ethics and responsible AI"
+      ],
+      "skills": [
+        "Executive Leadership", "Strategy", "Governance", "Business Acumen", "Communication", "Change Management", "P&L Responsibility",
+        "Board Communication", "Data Ethics", "Risk Management"
+      ],
+      "tools": [
+        "Board Decks", "Strategy Frameworks", "Governance Platforms", "Analytics ROI Models", "OKR Software", "Financial Reports",
+        "Data Catalogs", "AI Ethics Frameworks"
+      ],
+      "salary": "₹80L - ₹2Cr+ per year",
+      "tips": "Be a business leader first. Data is the means, value is the end. Build trust across the C-suite. Measure impact in revenue and efficiency.",
+      "levels": {
+        "expert": [
+          { "topic": "C-Level Data Leadership", "concepts": ["Data as Strategic Asset", "AI Transformation", "Cultural Change", "Data Monetization"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "enterpriseAI": ["AI Strategy", "Ethical AI", "ROI Frameworks", "AI Center of Excellence"],
+        "dataMonetization": ["New Revenue Streams", "Data Products", "Partnerships", "Data Marketplaces"]
+      }
+    },
+    {
+      "title": "Data Scientist",
+      "description": "Apply statistical modeling, machine learning, and domain expertise to solve complex business problems and generate predictive insights.",
+      "image": "https://cdn.simpleicons.org/scikitlearn/F7931E",
+      "difficulty": "intermediate-to-advanced",
+      "responsibilities": [
+        "Frame business problems as ML/statistical tasks",
+        "Perform advanced feature engineering and selection",
+        "Develop and validate ML models (classification, regression, clustering)",
+        "Conduct causal inference and counterfactual analysis",
+        "Deploy models via APIs or integrate into production systems",
+        "Monitor model performance and retrain as needed",
+        "Collaborate with product, engineering, and business teams",
+        "Communicate model limitations and business impact",
+        "Stay current with ML research and best practices",
+        "Design and analyze experiments (A/B, multi-armed bandits)",
+        "Build recommendation systems and personalization engines",
+        "Support pricing and demand forecasting"
+      ],
+      "skills": [
+        "Statistics", "Machine Learning", "Python/R", "SQL", "Experiment Design", "Feature Engineering",
+        "Model Evaluation", "Communication", "Domain Expertise", "Cloud Platforms", "Causal Inference",
+        "Recommendation Systems", "Time Series Analysis"
+      ],
+      "tools": [
+        "Python (scikit-learn, statsmodels, XGBoost, LightGBM)", "R", "Jupyter", "SQL", "Git",
+        "TensorFlow/PyTorch (basic)", "MLflow", "SageMaker", "BigQuery ML", "Databricks",
+        "Optuna", "Ray Tune", "Weights & Biases"
+      ],
+      "salary": "₹10L - ₹35L per year",
+      "tips": "Focus on problem framing over fancy models. Master fundamentals of stats and experiment design. Communication is your superpower. Deliver business value, not just accuracy.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Statistical Modeling", "concepts": ["GLMs", "Regularization", "Cross-validation", "Bias-Variance Tradeoff", "Bootstrapping"] },
+          { "topic": "ML Deployment", "concepts": ["Model Serialization", "APIs (Flask/FastAPI)", "Monitoring", "A/B Testing Models", "Shadow Deployment"] }
+        ],
+        "advanced": [
+          { "topic": "Causal Inference", "concepts": ["Propensity Scoring", "Diff-in-Diff", "Instrumental Variables", "Uplift Modeling", "Synthetic Controls"] },
+          { "topic": "Advanced ML", "concepts": ["Ensembling", "Bayesian Methods", "Anomaly Detection", "NLP Basics", "Graph ML"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "predictiveModeling": ["Churn", "LTV", "Demand Forecasting", "Risk Scoring", "Fraud Detection"],
+        "experimentation": ["A/B/n Tests", "Multi-armed Bandits", "Causal Impact", "Geo Experiments"],
+        "recommendationSystems": ["Collaborative Filtering", "Content-based", "Hybrid Models", "Cold Start"],
+        "pricingAnalytics": ["Dynamic Pricing", "Price Elasticity", "Conjoint Analysis"]
+      }
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "description": "Design, build, and deploy scalable machine learning systems that power real-time and batch AI applications.",
+      "image": "https://cdn.simpleicons.org/tensorflow/FF6F00",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Design and implement ML pipelines from prototype to production",
+        "Build scalable feature stores and data preprocessing systems",
+        "Optimize model inference for latency, throughput, and cost",
+        "Containerize models (Docker) and manage orchestration (K8s)",
+        "Implement model monitoring, logging, and alerting",
+        "Collaborate with data scientists on model requirements",
+        "Manage model versioning and experiment tracking",
+        "Ensure model security, compliance, and fairness",
+        "Contribute to MLOps platform development",
+        "Optimize models for edge deployment",
+        "Implement distributed training"
+      ],
+      "skills": [
+        "Python", "Machine Learning", "Software Engineering", "Cloud Platforms", "Distributed Systems",
+        "APIs", "CI/CD", "System Design", "Model Optimization", "Monitoring", "Edge ML", "GPU Programming"
+      ],
+      "tools": [
+        "TensorFlow", "PyTorch", "scikit-learn", "Docker", "Kubernetes", "MLflow", "Kubeflow",
+        "SageMaker", "Vertex AI", "Azure ML", "Prometheus", "Grafana", "FastAPI", "Airflow", "Terraform",
+        "ONNX", "TensorRT", "DeepSpeed"
+      ],
+      "salary": "₹15L - ₹50L per year",
+      "tips": "Strong software engineering skills are non-negotiable. Master one cloud ML platform. Automate everything. Think in production systems, not notebooks.",
+      "levels": {
+        "advanced": [
+          { "topic": "Model Serving", "concepts": ["TF Serving", "TorchServe", "ONNX", "Batch vs Real-time Inference", "Model Meshing"] },
+          { "topic": "Feature Engineering at Scale", "concepts": ["Feature Stores", "Streaming Features", "Backfilling", "Consistency", "TTL"] }
+        ],
+        "expert": [
+          { "topic": "MLOps Architecture", "concepts": ["End-to-End Pipelines", "Model Registry", "Drift Detection", "AutoML Integration", "Multi-tenancy"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "computerVision": ["Object Detection", "Image Classification", "Video Analytics", "OCR", "3D Reconstruction"],
+        "nlp": ["Sentiment Analysis", "NER", "Text Summarization", "LLM Fine-tuning", "Translation"],
+        "recommendationEngines": ["Real-time Personalization", "Multi-armed Bandits", "Contextual Bandits", "Session-based Recs"]
+      }
+    },
+    {
+      "title": "MLOps Engineer",
+      "description": "Build and maintain the infrastructure, tooling, and processes to reliably deploy, monitor, and scale ML models in production.",
+      "image": "https://cdn.simpleicons.org/kubeflow/000000",
+      "difficulty": "expert",
+      "responsibilities": [
+        "Design and maintain MLOps platform (CI/CD for ML)",
+        "Implement model registry, feature store, and experiment tracking",
+        "Automate model retraining and deployment pipelines",
+        "Ensure reproducibility and lineage for models and data",
+        "Monitor model performance, data drift, and system health",
+        "Enforce security, compliance, and cost governance",
+        "Standardize ML workflows across teams",
+        "Integrate with data and DevOps platforms",
+        "Implement canary and blue-green model deployments",
+        "Design model rollback strategies"
+      ],
+      "skills": [
+        "MLOps", "DevOps", "Cloud Platforms", "Python", "Infrastructure as Code", "Monitoring", "Security", "System Design",
+        "Model Governance", "Cost Optimization"
+      ],
+      "tools": [
+        "MLflow", "Kubeflow", "TFX", "SageMaker Pipelines", "Vertex AI Pipelines", "DVC", "Feast", "Prometheus",
+        "Grafana", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Airflow", "Seldon", "BentoML"
+      ],
+      "salary": "₹18L - ₹60L per year",
+      "tips": "You’re the glue between DS and DE. Focus on reliability, observability, and developer experience. Automate model lifecycle. Measure MTTR.",
+      "levels": {
+        "expert": [
+          { "topic": "End-to-End MLOps", "concepts": ["Unified Platform", "Multi-tenancy", "Cost Allocation", "Audit Trails", "Self-service"] },
+          { "topic": "Model Monitoring", "concepts": ["Concept Drift", "Data Drift", "Statistical Process Control", "Bias Monitoring", "Explainability"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "platformEngineering": ["ML Platform as a Product", "Self-service ML", "Model Governance", "Template Pipelines"],
+        "scalableInference": ["GPU Optimization", "Model Quantization", "Serverless Inference", "Edge Deployment"]
+      }
+    },
+    {
+      "title": "AI Research Scientist",
+      "description": "Conduct cutting-edge research to advance the state-of-the-art in artificial intelligence and machine learning.",
+      "image": "https://cdn.simpleicons.org/arxiv/DA7017",
+      "difficulty": "expert",
+      "responsibilities": [
+        "Identify novel research problems with practical impact",
+        "Develop new algorithms, architectures, or training methods",
+        "Publish in top-tier conferences (NeurIPS, ICML, CVPR, ACL)",
+        "Prototype and validate research ideas",
+        "Collaborate with engineering to productize research",
+        "Mentor junior researchers and interns",
+        "Stay at the forefront of AI literature and trends",
+        "File patents for novel inventions",
+        "Lead research teams and set directions"
+      ],
+      "skills": [
+        "Deep Learning", "Mathematics", "Research", "Python", "Scientific Writing", "Experimentation", "Problem Formulation",
+        "Paper Writing", "Peer Review", "Grant Writing"
+      ],
+      "tools": [
+        "PyTorch", "TensorFlow", "JAX", "Git", "LaTeX", "Papers With Code", "Weights & Biases", "Google Colab",
+        "WandB", "Neptune.ai", "Comet ML"
+      ],
+      "salary": "₹25L - ₹2Cr+ per year",
+      "tips": "PhD strongly preferred. Focus on rigor, novelty, and clarity. Publishing is key. Balance theory and practice. Build a strong network.",
+      "levels": {
+        "expert": [
+          { "topic": "Foundational Research", "concepts": ["Transformers", "Diffusion Models", "Reinforcement Learning", "Self-supervised Learning", "Mixture of Experts"] },
+          { "topic": "Domain Specialization", "concepts": ["Computer Vision", "NLP", "Speech", "Robotics", "Bioinformatics", "Climate AI"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "foundationModels": ["LLMs", "Multimodal Models", "Efficient Training", "Parameter-efficient Tuning"],
+        "algorithmicInnovation": ["New Architectures", "Optimization Methods", "Theoretical Advances", "Scalability Laws"]
+      }
+    },
+    {
+      "title": "AI Product Manager",
+      "description": "Define and drive the vision for AI-powered products that solve real user problems and deliver business value.",
+      "image": "https://cdn.simpleicons.org/openai/412991",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Identify opportunities for AI to create product differentiation",
+        "Define product requirements and success metrics for AI features",
+        "Collaborate closely with ML engineers and data scientists",
+        "Balance user needs, business goals, and technical feasibility",
+        "Manage ethical AI considerations (bias, fairness, transparency)",
+        "Plan and prioritize AI product roadmap",
+        "Conduct user testing and measure AI feature impact",
+        "Communicate AI capabilities and limitations to stakeholders",
+        "Design fallback strategies and human-in-the-loop systems",
+        "Manage AI product launch and adoption"
+      ],
+      "skills": [
+        "Product Management", "AI/ML Literacy", "User Research", "Ethics", "Stakeholder Management", "Roadmapping", "Technical Communication",
+        "Prompt Engineering", "Model Evaluation", "Risk Assessment"
+      ],
+      "tools": [
+        "Jira", "Figma", "Amplitude", "Productboard", "Notion", "Miro", "Ethical AI Frameworks", "Model Cards",
+        "LangSmith", "Helicone", "PromptLayer"
+      ],
+      "salary": "₹18L - ₹70L+ per year",
+      "tips": "You don’t need to build models, but you must understand them. Ethics isn’t optional in AI products. Focus on user trust. Plan for model degradation.",
+      "levels": {
+        "advanced": [
+          { "topic": "AI Product Strategy", "concepts": ["Problem Selection", "Feasibility Assessment", "Human-in-the-Loop", "Fallback Strategies", "Cost Modeling"] },
+          { "topic": "Responsible AI", "concepts": ["Bias Auditing", "Explainability", "Privacy by Design", "Model Cards", "Red Teaming"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "genAIProducts": ["Chatbots", "Copilots", "Content Generation", "Code Assistants", "Image Generation"],
+        "predictiveProducts": ["Forecasting Tools", "Risk Engines", "Smart Recommendations", "Anomaly Detection"]
+      }
+    },
+    {
+      "title": "Generative AI Engineer",
+      "description": "Specialize in building applications powered by large language models (LLMs) and generative AI technologies.",
+      "image": "https://cdn.simpleicons.org/huggingface/FFD700",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Fine-tune and deploy open-source LLMs (Llama, Mistral, etc.)",
+        "Build RAG (Retrieval-Augmented Generation) pipelines",
+        "Implement prompt engineering and chaining (LangChain, LlamaIndex)",
+        "Optimize LLM inference for cost, speed, and quality",
+        "Integrate LLMs with external tools and APIs",
+        "Evaluate and monitor LLM outputs for quality and safety",
+        "Implement guardrails and moderation systems",
+        "Stay updated on generative AI frameworks and models",
+        "Design agentic workflows and multi-agent systems",
+        "Implement evaluation frameworks for generative outputs"
+      ],
+      "skills": [
+        "LLMs", "Prompt Engineering", "Python", "Cloud Platforms", "APIs", "Vector Databases", "Evaluation", "Security",
+        "RAG", "Fine-tuning", "Quantization", "Agent Design"
+      ],
+      "tools": [
+        "Hugging Face Transformers", "LangChain", "LlamaIndex", "Pinecone", "Weaviate", "Chroma",
+        "OpenAI API", "Anthropic Claude", "Llama.cpp", "vLLM", "TensorRT-LLM", "Guardrails", "LangSmith",
+        "Phoenix", "TruLens", "DeepEval"
+      ],
+      "salary": "₹20L - ₹80L+ per year",
+      "tips": "Master RAG and evaluation. Understand token economics. Safety and alignment are critical. Cache aggressively. Monitor hallucinations.",
+      "levels": {
+        "advanced": [
+          { "topic": "LLM Application Development", "concepts": ["RAG", "Agent Frameworks", "Tool Use", "Multi-turn Dialog", "Memory Management"] },
+          { "topic": "LLM Optimization", "concepts": ["Quantization", "Distillation", "Efficient Inference", "Caching", "Batching"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "enterpriseRAG": ["Knowledge Base Q&A", "Document Summarization", "Semantic Search", "Citation Tracking"],
+        "agentSystems": ["Autonomous Agents", "Task Planning", "Memory Systems", "Multi-agent Collaboration", "Tool Integration"]
+      }
+    },
+    {
+      "title": "Data Visualization Specialist",
+      "description": "Create compelling, interactive, and insightful data visualizations to communicate complex information clearly to stakeholders.",
+      "image": "https://cdn.simpleicons.org/datastudio/4285F4",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Design visually appealing and informative dashboards",
+        "Choose appropriate chart types for different data stories",
+        "Implement interactive elements and drill-down capabilities",
+        "Ensure accessibility and mobile responsiveness",
+        "Collaborate with analysts to understand key insights",
+        "Maintain visualization standards and style guides",
+        "Optimize performance of complex visualizations",
+        "Train users on dashboard interpretation and interaction",
+        "Create data art and infographics for executive communication",
+        "Integrate visualizations into reports and presentations"
+      ],
+      "skills": [
+        "Data Visualization", "Design Principles", "Color Theory", "Storytelling", "BI Tools", "Accessibility",
+        "User Experience", "Typography", "Layout Design"
+      ],
+      "tools": [
+        "Tableau", "Power BI", "Looker", "D3.js", "Figma", "Adobe Illustrator", "Google Data Studio",
+        "Plotly", "Highcharts", "Observable", "Flourish", "Infogram"
+      ],
+      "salary": "₹6L - ₹18L per year",
+      "tips": "Less is more. Guide the eye. Use color intentionally. Tell a story. Test with real users. Accessibility matters.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Visualization Best Practices", "concepts": ["Chart Selection", "Color Usage", "Hierarchy", "Interactivity", "Narrative Flow"] },
+          { "topic": "Advanced Techniques", "concepts": ["Custom Visuals", "Parameters", "Dynamic Titles", "Responsive Design"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "executiveReporting": ["C-suite Dashboards", "KPI Trees", "Performance Scorecards"],
+        "exploratoryViz": ["Scatter Plots", "Heatmaps", "Network Graphs", "Sankey Diagrams"]
+      }
+    },
+    {
+      "title": "Customer Data Platform (CDP) Architect",
+      "description": "Design and implement customer data platforms to unify customer data across touchpoints for personalized experiences.",
+      "image": "https://cdn.simpleicons.org/segment/54C7C5",
+      "difficulty": "advanced",
+      "responsibilities": [
+        "Design CDP architecture and data model",
+        "Integrate data from web, mobile, CRM, and offline sources",
+        "Implement identity resolution and stitching",
+        "Ensure real-time data availability for activation",
+        "Design data privacy and consent management",
+        "Support personalization and journey orchestration",
+        "Monitor data quality and completeness",
+        "Collaborate with marketing and product teams",
+        "Define CDP governance and access controls",
+        "Plan for scalability and performance"
+      ],
+      "skills": [
+        "CDP Architecture", "Identity Resolution", "Real-time Processing", "Data Modeling", "Privacy",
+        "Marketing Technology", "API Design", "Event Streaming"
+      ],
+      "tools": [
+        "Segment", "Tealium", "mParticle", "Snowflake", "BigQuery", "Kafka", "Fivetran",
+        "Hightouch", "Census", "Amplitude", "Braze", "Customer.io"
+      ],
+      "salary": "₹18L - ₹40L per year",
+      "tips": "Focus on identity as the foundation. Design for activation, not just storage. Privacy by design. Measure time-to-value.",
+      "levels": {
+        "advanced": [
+          { "topic": "CDP Core", "concepts": ["Identity Graph", "Event Schema", "Real-time Sync", "Consent Management"] },
+          { "topic": "Activation", "concepts": ["Reverse ETL", "Audience Builder", "Journey Triggers", "Personalization"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "personalization": ["360 Customer View", "Propensity Models", "Next Best Action"],
+        "privacyTech": ["Consent Orchestration", "Data Minimization", "Pseudonymization"]
+      }
+    },
+    {
+      "title": "Data Literacy Trainer",
+      "description": "Develop and deliver training programs to improve data literacy across the organization, from basic concepts to advanced analytics.",
+      "image": "https://cdn.simpleicons.org/udemy/EC5252",
+      "difficulty": "intermediate",
+      "responsibilities": [
+        "Assess organizational data literacy levels",
+        "Design curriculum for different roles and skill levels",
+        "Deliver workshops, bootcamps, and ongoing training",
+        "Create learning materials, exercises, and certifications",
+        "Measure training effectiveness and knowledge retention",
+        "Build internal data champions network",
+        "Support self-paced learning platforms",
+        "Stay updated on data tools and best practices",
+        "Facilitate data office hours and Q&A sessions",
+        "Track adoption of data-driven decision making"
+      ],
+      "skills": [
+        "Teaching", "Curriculum Design", "Data Literacy", "Communication", "Facilitation",
+        "Adult Learning", "Assessment", "Storytelling"
+      ],
+      "tools": [
+        "Google Slides", "Miro", "Notion", "DataCamp", "Coursera", "Udemy", "Tableau Public",
+        "Excel", "SQL Playgrounds", "Kahoot", "Mentimeter"
+      ],
+      "salary": "₹8L - ₹20L per year",
+      "tips": "Make it relevant to their jobs. Use real company data. Hands-on beats theory. Celebrate small wins. Build a community.",
+      "levels": {
+        "intermediate": [
+          { "topic": "Foundational Literacy", "concepts": ["Data Types", "Basic Stats", "Chart Reading", "Bias Awareness"] },
+          { "topic": "Tool Training", "concepts": ["Excel for Analysis", "BI Tool Basics", "SQL for Business Users"] }
+        ]
+      },
+      "aiMlSpecializations": {
+        "executiveLiteracy": ["Reading Dashboards", "Asking Right Questions", "Understanding AI Outputs"],
+        "analystUpskilling": ["Advanced SQL", "Python Basics", "Experiment Design"]
+      }
+    }
+  ]
+}
